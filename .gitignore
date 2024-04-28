@@ -1,0 +1,3 @@
+solutions/*/__pycache__
+solutions/*/rust_solution/Cargo.lock
+solutions/*/rust_solution/target
