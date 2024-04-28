@@ -10,9 +10,9 @@
 
 如果 `left` 和 `right` 指向同一个位置，且这个位置不在开始或结束，那么就返回 `True`，表示这是一个有效的山脉数组；否则返回 `False`。
 
-## Complexity
+## 复杂度
 
-- Time complexity: The time complexity is O(n) because in the worst case we traverse the array twice, once from the left and once from the right. Here, n is the length of the array.
+- 时间复杂度：时间复杂度为 O(n)，因为在最坏的情况下，我们需要遍历数组两次，一次从左到右，一次从右到左。这里的 n 是数组的长度。
 
-- Space complexity: The space complexity is O(1) because we are not using any extra space that scales with the input size. We are only using a constant amount of space to store the two pointers.
+- 空间复杂度：空间复杂度为 O(1)，因为我们没有使用与输入大小成比例的额外空间。我们只使用了恒定的空间来存储两个指针。
   
