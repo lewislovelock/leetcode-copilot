@@ -8,7 +8,7 @@ Currently, this repository contains solutions in:
 
 - 🐍 Python
 - 🦀 Rust (which I'm currently learning)
-- 🌐 Go (coming soon!)
+- 🌐 Go (depends on my mood🤗)
 
 ## 🏃‍♂️ How to Run the Solutions
 
@@ -28,7 +28,7 @@ python -m doctest -v <problems>.py
 
 ### Rust
 
-To run a Rust solution, navigate to the rust_solution directory and use:
+To run a Rust solution, navigate to the `rust_solution` directory under each problem directory and use:
 
 ```shell
 cargo run
