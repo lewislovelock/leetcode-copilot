@@ -10,3 +10,26 @@ We can solve this problem using the two-pointer technique. We maintain two point
 
 - Time complexity: The time complexity is O(n) because we are scanning through the array once. Here, n is the length of the array.
 - Space complexity: The space complexity is O(1) because we are not using any extra space that scales with the input size. We are only using a constant amount of space to store the pointers.
+
+## Code
+
+```py
+from typing import List
+
+
+class Solution:
+    def remove_element(self, nums: List[int], val: int) -> int:
+        """
+        >>> Solution().remove_element([3,2,2,3], 3)
+        2
+        >>> Solution().remove_element([0,1,2,2,3,0,4,2], 2)
+        5
+        """
+        fast, slow = 0, 0
+        while fast < len(nums):
+            if nums[fast] != val:
+                nums[slow] = nums[fast]
+                slow += 1
+            fast += 1
+        return slow
+```

@@ -31,12 +31,14 @@ python -m doctest -v <problems>.py
 To run a Rust solution, navigate to the `rust_solution` directory under each problem directory and use:
 
 ```shell
-cargo run
+rustc main.rs
+./main
 ```
 
 To run the tests for a Rust solution, use:
 
 ```shell
+cargo init
 cargo test
 ```
 

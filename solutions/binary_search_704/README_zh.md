@@ -17,3 +17,21 @@
 - 时间复杂度：时间复杂度为 O(log n)，因为我们每次比较都会将输入的大小减半。这里的 n 是数组的长度。
 
 - 空间复杂度：空间复杂度为 O(1)，因为我们没有使用与输入大小成比例的额外空间。我们只使用了恒定的空间来存储指针。
+
+## Code
+
+```python
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums)-1
+
+        while left <= right:
+            mid = left + (right - left) // 2
+            if nums[mid] > target:
+                right = mid - 1
+            elif nums[mid] < target:
+                left = mid + 1
+            else: return mid
+
+        return -1
+```

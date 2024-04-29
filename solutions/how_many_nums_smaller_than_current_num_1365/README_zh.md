@@ -15,3 +15,21 @@
 - 时间复杂度：时间复杂度为 O(n log n)，因为我们正在对数组进行排序。这里的 n 是数组的长度。
 
 - 空间复杂度：空间复杂度为 O(n)，因为我们使用了一个与输入数组大小相同的额外数组和一个哈希表来存储计数。在最坏的情况下，哈希表的大小可以等于数组的大小。
+
+## Code
+
+```py
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        res = nums[:]
+        hash = dict()
+        res.sort()
+        
+        for i, num in enumerate(res):
+            if num not in hash.keys():
+                hash[num] = i
+        for i, num in enumerate(nums):
+            res[i] = hash[num]
+
+        return res
+```
