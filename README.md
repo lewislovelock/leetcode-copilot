@@ -1,5 +1,6 @@
 # 🚀 LeetCode Copilot 🚀
 
+
 Welcome to my LeetCode Copilot repository! This is where I store my journey of learning and problem-solving on LeetCode, with the help of GitHub Copilot.
 
 ## 📚 Languages
@@ -17,13 +18,13 @@ Currently, this repository contains solutions in:
 To run a Python solution, use the following command:
 
 ```shell
-python <problem>.py
+python <solution>.py
 ```
   
 Each Python solution comes with its own test cases. To run these tests, use:
 
 ```shell
-python -m doctest -v <problems>.py
+python -m doctest -v <solution>.py
 ```
 
 ### Rust
