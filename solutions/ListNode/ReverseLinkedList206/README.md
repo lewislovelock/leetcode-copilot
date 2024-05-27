@@ -1,8 +1,11 @@
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
 
 ## Approach
+
 <!-- Describe your approach to solving the problem. -->
+
 1. Initialize three pointers: `cur` pointing to `head`, `pre` pointing to `None`, and `next`.
 2. Traverse the list until `cur` is not `None`.
 3. In each iteration, first save `cur.next` in `next`.

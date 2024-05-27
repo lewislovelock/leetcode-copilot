@@ -3,6 +3,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class MyLinkedList:
     def __init__(self) -> None:
         """
@@ -26,7 +27,7 @@ class MyLinkedList:
         for _ in range(index):
             cur = cur.next
         return cur.val
-    
+
     def addAtHead(self, val: int) -> None:
         """
         >>> linked_list = MyLinkedList()
@@ -59,7 +60,7 @@ class MyLinkedList:
         """
         if index < 0 or index > self.size:
             return
-        
+
         cur = self.dummy_head
         for _ in range(index):
             cur = cur.next
@@ -76,9 +77,9 @@ class MyLinkedList:
         """
         if index < 0 or index >= self.size:
             return
-        
+
         cur = self.dummy_head
         for _ in range(index):
             cur = cur.next
         cur.next = cur.next.next
-        self.size -= 1   
+        self.size -= 1

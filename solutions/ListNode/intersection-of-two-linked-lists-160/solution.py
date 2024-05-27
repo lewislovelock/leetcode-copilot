@@ -57,34 +57,3 @@ class Solution:
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
-
-class Solution:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
-        lenA = self.getLength(headA)
-        lenB = self.getLength(headB)
-
-        if lenA > lenB:
-            self.moveForward(headA, lenA-lenB)
-        else:
-            self.moveForward(headB, lenB-lenA)
-
-        while headA and headB:
-            if headA == headB:
-                return headA
-            headA = headA.next
-            headB = headB.next
-
-        return None
-
-    def getLength(self, head: ListNode) -> int:
-        length = 0
-        while head:
-            length += 1
-            head = head.next
-        return length
-
-    def moveForward(self, head: ListNode, steps: int) -> ListNode:
-        for _ in range(steps):
-            head = head.next
-        return head
